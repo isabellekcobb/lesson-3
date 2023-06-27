@@ -19,7 +19,7 @@ object diesel_dg
     speed 360 1/min;
     torque 680;
     //TotalRealPow (2*3.14159265359/60);
-    TotalRealPow (diesel_dg.speed*diesel_dg.torque)/(diesel_dg.stroke*diesel_dg.cylinders);
+    TotalRealPow (speed*torque)/(stroke*cylinders);
 }
 
 // Task 2 - Add 4kW 100 sf solar panel on load 10 (tilt 45, efficiency 0.135, south facing, fixed) 
