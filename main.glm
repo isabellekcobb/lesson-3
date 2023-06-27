@@ -44,13 +44,15 @@ object meter
     {
         name inv_10;
         phases AN;
-        rated_power 25 kVA;
+        rated_power 250 kVA;
+        
         object solar 
         {
             name solar_10;
             parent inv_10;
-            rated_power 4.0 kVA;
-            area 100 sf;
+            // rating=1000 kW/m^2 * areas*efficiency, directly proportional to area of solar
+            rated_power 40 kVA;
+            area 1000 sf;
             tilt_angle 45.0 deg;
             efficiency 13.5%;
             orientation_azimuth 180;
