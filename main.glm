@@ -8,7 +8,8 @@
 module generators;
 object diesel_dg 
 {
-    parent node_8;
+    // parent node_8;
+    parent load_9;
     Gen_mode CONSTANTPQ;
     Gen_status ONLINE;
     Gen_type SYNCHRONOUS;
@@ -19,14 +20,6 @@ object diesel_dg
     torque 680;
     TotalRealPow (2*3.14159265359/60);
     //*diesel_dg.speed*diesel_dg.torque/(diesel_dg.stroke*diesel_dg.cylinders);
-    object load 
-    {
-        name load_9;
-        groupid nodevolts;
-        phases AN;
-        constant_power_A 40000.000000+20000.000000j;
-        nominal_voltage 2401.7771;
-    };
 }
 
 // Task 2 - Add 4kW 100 sf solar panel on load 10 (tilt 45, efficiency 0.135, south facing, fixed) 
