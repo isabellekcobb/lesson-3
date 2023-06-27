@@ -18,8 +18,8 @@ object diesel_dg
     stroke 2;
     speed 360 1/min;
     torque 680;
-    //TotalRealPow (2*3.14159265359/60);
-    //TotalRealPow (speed*torque)/(stroke*cylinders);
+    TotalOutputPow @load_9.constant_power_A;
+    //TotalRealPow (2*3.14159265359/60)*(speed*torque)/(stroke*cylinders);
     phases 1;
 }
 
