@@ -17,7 +17,7 @@ object diesel_dg
     stroke 2;
     speed 360 1/min;
     torque 680;
-    TotalRealPow (2*3.14159265359/60)*diesel_dg.speed*diesel_dg.torque/(diesel_dg.stroke*diesel_dg.cylinders);
+    TotalOutputPow (2*3.14159265359/60)*diesel_dg.speed*diesel_dg.torque/(diesel_dg.stroke*diesel_dg.cylinders);
     object load 
     {
         name load_9;
