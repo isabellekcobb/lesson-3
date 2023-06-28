@@ -50,7 +50,7 @@ object meter
         {
             name solar_10;
             parent inv_10;
-            // rating=1000 kW/m^2 * areas*efficiency, directly proportional to area of solar
+            // rating=100 kW/m^2 * areas*efficiency, directly proportional to area of solar
             rated_power 40 kVA;
             area 1000 sf;
             tilt_angle 45.0 deg;
